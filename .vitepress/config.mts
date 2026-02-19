@@ -63,6 +63,11 @@ export default defineConfig({
       ],
     },
 
+    outline: {
+      level: [2, 6], // 显示 h2 到 h6 的标题
+      label: '目录'   // 右侧栏顶部的标题文字
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/PeiYangRobot' },
       { icon: 'bilibili', link: 'https://space.bilibili.com/520634089?spm_id_from=333.337.0.0' },
@@ -70,7 +75,11 @@ export default defineConfig({
     ],
     footer: {
       copyright: 'Copyright © 2026 - prsent PeiYang Robot'
-    }
+    },
+    search: {
+      provider: 'local'
+    },
+
 
   }
 })
